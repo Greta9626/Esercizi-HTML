@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+	<form action="#" method="GET">
+	    <div>
+    		<label for="email">Email</label>
+    		<input type="email" name="email" id="email" required>
+    		<label for="pass">Password</label>
+    		<input type="password" name="pass" id="password" required>
+    	</div>
+    
+    	<div>
+    		<label for="nome">Nome e cognome</label>
+    		<input type="text" name="nome" id="nome" required>
+    		<label for="nascita">Data di nascita</label>
+    		<input type="date" name="nascita" id="data" required>
+    		<label for="tel">Telefono</label>
+    		<input type="tel" name="tel" id="telefono" required>
+    	</div>
+    
+    	<div>
+    		<label for="abbonamento">Scegli un piano</label>
+    		<select name="abbonamento" id="abbonamento" required>
+    			<option value="free">free</option>
+    			<optgroup label="mensili">
+    				<option value="1-99">1.99€/mese</option>
+    				<option value="5-99">5.99€/mese</option>
+    				<option value="11-99">11.99€/mese</option>
+    			</optgroup>
+    		</select>
+    
+    		<label for="pro">Piano PRO</label>
+    		<input type="checkbox" name="pro" id="pro">
+    	</div>
+    
+    	<div>
+    		<label for="cc">Numero Carta</label>
+    		<input type="text" id="cc" name="cvc" minlength="16" maxlength="16" required>
+    		<label for="cvc">CVC</label>
+    		<input type="text" id="cvc" name="cvc" minlength="3" maxlength="3" required>
+    		<label for="scad">Scadenza</label>
+    		<input type="date" name="scad" id="scad" required>
+    		<label for="indirizzo">Indirizzo di fatturazione</label>
+    		<input type="text" id="indirizzo" name="indirizzo" required>
+    	</div>
+    
+    	<button type="submit">Registrati</button>
+	</form>
+
+</body>
+
+</html>
